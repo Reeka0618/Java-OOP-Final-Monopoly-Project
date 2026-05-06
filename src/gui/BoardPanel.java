@@ -14,37 +14,6 @@ import java.io.IOException;
 import java.util.*;
 import java.util.List;
 
-/**
- * 40-tile Monopoly board.
- *
- * Standard layout — 4 corners + 9 normal tiles per side:
- *
- *  [30:TL]  [29][28][27][26][25][24][23][22][21]  [20:TR]
- *  [31]                                            [19]
- *  [32]                                            [18]
- *  [33]               CENTER                       [17]
- *  [34]                                            [16]
- *  [35]                                            [15]
- *  [36]                                            [14]
- *  [37]                                            [13]
- *  [38]                                            [12]
- *  [39]                                            [11]
- *  [0:BL]   [1] [2] [3] [4] [5] [6] [7] [8] [9]  [10:BR]
- *
- * Corners:  0=GO(BL), 10=Jail(BR), 20=FreeParking(TR), 30=GoToJail(TL)
- * Segments:
- *   Bottom L→R : 0(BL), 1–9, 10(BR)       = 11 tiles
- *   Right  B→T : 11–19, 20(TR)            = 10 tiles
- *   Top    R→L : 20(TR), 21–29, 30(TL)    = 11 tiles
- *   Left   T→B : 31–39                    = 9 tiles (no extra corners needed)
- *   Total: corners shared = 4, unique = 4+9+9+9+9 = 40 ✓
- *
- * Board pixel dimensions:
- *   C  = corner size (px)
- *   TW = tile narrow width
- *   N  = 9 (normal tiles between corners)
- *   BW = BH = C + N*TW + C
- */
 public class BoardPanel extends JPanel {
 
     private final GameEngine engine;
@@ -159,15 +128,6 @@ public class BoardPanel extends JPanel {
     }
 
     // ── Tile rect ───────────────────────────────────────────────────
-    /**
-     * Returns the screen rectangle for tile [index] given board offset (offX, offY).
-     *
-     * Corners  : 0(BL), 10(BR), 20(TR), 30(TL) → C×C
-     * Bottom   : 1–9   → x=C+(i-1)*TW,  y=BH-TH,  w=TW, h=TH
-     * Right    : 11–19 → x=BW-TH,  y=BH-C-(row+1)*TW,  w=TH, h=TW   row=i-11
-     * Top      : 21–29 → x=C+(29-i)*TW, y=0,  w=TW, h=TH
-     * Left     : 31–39 → x=0, y=C+(row)*TW, w=TH, h=TW   row=i-31
-     */
     public Rectangle getTileRect(int index, int offX, int offY) {
         // Corners
         if (index ==  0) return new Rectangle(offX,             offY + BH - C, C,  C);  // BL GO

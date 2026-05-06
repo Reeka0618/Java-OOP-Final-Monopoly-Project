@@ -16,6 +16,7 @@ public abstract class Tile {
     }
 
     public abstract void onLand(Player player, java.util.function.Consumer<String> log);
+    public abstract void onLand(Player player);
 
     public String getName() {
         return name;
