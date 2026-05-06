@@ -3,6 +3,7 @@ package model;
 import tile.Tile;
 
 public class Board {
+    private static Board instance;
     private Tile[] tiles;
 
     public Board(Tile[] tiles) {
@@ -20,5 +21,12 @@ public class Board {
 
     public int getSize() {
         return tiles.length;
+    }
+
+    public static Board getInstance(Tile[] tiles) {
+        if (instance == null) {
+            instance = new Board(tiles);
+        }
+        return instance;
     }
 }
