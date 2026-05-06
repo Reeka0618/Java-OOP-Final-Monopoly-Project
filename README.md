@@ -1,39 +1,23 @@
-<<<<<<< HEAD
-## Getting Started
+# 🎩 Monopoly Game - OOP Final Project
+**University:** International University - VNU-HCM
+**Course:** Object-Oriented Programming (IT149IU)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 👥 Team Members
+- **Nguyễn Võ Đức Huy** - Student ID: [MAMAIU25010] - Role: Backend & Core Logic
+- **[Tên bạn của bạn]** - Role: GUI & Event Handling
 
-## Folder Structure
+## 🎮 Game Features
+- **Core Logic:** Dice rolling, movement, property purchasing, rent calculation, and bankruptcy handling.
+- **GUI:** Interactive board using **Java Swing**, player token display, and real-time game log.
+- **OOP Principles:** Applied Inheritance, Encapsulation, and Polymorphism in Tile and Player classes.
 
-The workspace contains two folders by default, where:
+## 🚀 How to Run
+1. Ensure you have **Java JDK 11+** installed.
+2. Clone this repository.
+3. Open the project in VS Code or IntelliJ.
+4. Run the `src/game/Main.java` file.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
->>>>>>> logic-origin/main
+## 🛠 Tech Stack
+- **Language:** Java
+- **Library:** Java Swing (GUI)
+- **Version Control:** Git & GitHub
