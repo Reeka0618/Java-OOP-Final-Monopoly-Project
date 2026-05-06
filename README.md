@@ -3,9 +3,8 @@
 **Course:** Object-Oriented Programming (IT149IU)
 
 ## 👥 Team Members
-- **Nguyễn Võ Đức Huy** - Student ID: [MAMAIU25010] - Role: Backend & Core Logic
-- **[Tên bạn của bạn]** - Role: GUI & Event Handling
-
+- Nguyễn Võ Đức Huy - Student ID: [MAMAIU25010] - Role: Backend & Core Logic
+- Nguyễn Ngọc Hải - Student ID: [MAMAIU25009] - Role: GUI & Event Handling
 ## 🎮 Game Features
 - **Core Logic:** Dice rolling, movement, property purchasing, rent calculation, and bankruptcy handling.
 - **GUI:** Interactive board using **Java Swing**, player token display, and real-time game log.
