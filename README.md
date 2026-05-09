@@ -14,7 +14,7 @@
 1. Ensure you have **Java JDK 11+** installed.
 2. Clone this repository.
 3. Open the project in VS Code or IntelliJ.
-4. Run the `src/game/Main.java` file.
+4. Run the `src/game/Main.java` file. (right click then choose "Run Java")
 
 ## Tech Stack
 - **Language:** Java
