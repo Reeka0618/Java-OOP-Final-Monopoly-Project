@@ -7,16 +7,17 @@ public abstract class Tile {
     protected String name;
     protected Board board;
 
-    public void setBoard(Board board) {
-        this.board = board;
-    }
-
     public Tile(String name) {
         this.name = name;
     }
 
+    public void setBoard(Board board) {
+        this.board = board;
+    }
+
     public abstract void onLand(Player player, java.util.function.Consumer<String> log);
-    public abstract void onLand(Player player);
+
+    public void onLand(Player player) { }
 
     public String getName() {
         return name;
